@@ -3,9 +3,9 @@
 /**
  * leet - encodes a string into 1337
  * @s: string to encode
- * Owned By bwave
+ *
  * Return: address of s
-*/
+ */
 char *leet(char *s)
 {
 	int i, j;
@@ -22,3 +22,4 @@ char *leet(char *s)
 	}
 	return (s);
 }
+/* Doing hard things is a must */
