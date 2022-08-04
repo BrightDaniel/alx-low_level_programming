@@ -12,8 +12,12 @@ int sum_them_all(const unsigned int n, ...)
 	va_list param;
 
 	va_start(param, n); /*Macro to intialize the argument in the parameter*/
+	if (n == 0)
+		return (0);
+
 	for (i = 0; i < n; i++)
 		sum += va_arg(param, int);  /*Get the next parameter in the function*/
+
 	va_end(param); /*Macro to end the var fun*/
 	return (sum);
 }
