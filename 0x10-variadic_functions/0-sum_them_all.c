@@ -7,8 +7,9 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
+	unsigned int i;
+	int sum = 0;
 	va_list param;
-	unsigned int i; int sum = 0;
 
 	va_start(param, n); /*Macro to intialize the argument in the parameter*/
 	for (i = 0; i < n; i++)
